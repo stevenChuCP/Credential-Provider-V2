@@ -35,4 +35,8 @@ Windows Server 2012 R2
 
 ## Run the sample
 
-To debug the app and then run it, press F5 or use **Debug** \> **Start Debugging**. To run the app without debugging, press Ctrl+F5 or use **Debug** \> **Start Without Debugging**.
+To run this sample, build the project in **Release** configuration. Find ```SampleV2CredentialProvider.dll``` in your build folder, and place it under ```C:\Windows\System32```. Then run ```register.reg``` to register the dll. At last press **```Win + L```** and you will be brought to the login page.
+
+To uninstall the Credential Provider, remove ```SampleV2CredentialProvider.dll``` from ```C:\Windows\System32``` and run ```Unregister.reg```.
+
+> It is recommended to test Credential Provider in a virtual machine. Since, it might break something if you're not aware.
